@@ -3,6 +3,11 @@
   --preto: #141414;
 }
 
+@font-face{
+  font-family: 'Wade Sans Light';
+  src: url('/fonts/Wade\ Sans\ Light\ Plain.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,9 +61,44 @@ header nav a:hover{
 }
 
 .filme-principal .descricao{
+  margin-top: 10px;
   margin-bottom: 40px;
+  
 }
 
-.titulo{
-  font-size: 40px;
+.filme-principal .titulo{
+  margin-top: 15%;
+  font-family: 'Wade Sans Light';
+  font-size: 80px;
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover{
+  background-color: rgb(240, 229, 229);
+  color: black;
+
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 20px;
+}
+
+.filme-principal .container{
+  width: 70%;
 }
