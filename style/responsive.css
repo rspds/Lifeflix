@@ -6,7 +6,7 @@
   }
 
   header .logo{
-    margin: 0px 50px;
+    margin: 0;
   }
 
   header nav{
@@ -39,3 +39,8 @@
   }
 }
 
+@media screen and (max-width: 362px){
+  body{
+    width: 362px;
+  }
+}

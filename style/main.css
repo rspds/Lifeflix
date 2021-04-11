@@ -8,6 +8,10 @@
   font-family: 'Wade Sans Light';
   src: url('/fonts/Wade\ Sans\ Light\ Plain.ttf');
 }
+@font-face{
+  font-family: 'Ballmer';
+  src: url('/fonts/BallmerArchiType.otf');
+}
 
 * {
   margin: 0;
@@ -131,4 +135,123 @@ header nav a:hover{
   height: 100%;
   font-size: 40px;
   
+}
+
+/*Pop-up*/
+.modal{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.50);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.mostrar{
+  display: flex;
+}
+
+.popup{
+  width: 400px;
+  height: 500px;
+  border: 3px solid rgba(0,0,0,0.8);
+  background: var(--preto);
+  /*
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: 0, right -200px top;
+  */
+  overflow: visible;
+  padding: 0;
+}
+
+.popup .container{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2));
+  background-size: cover;
+  overflow: visible;
+  /*border: 3px solid rgba(207, 3, 3, 0.8);
+ */
+  position: relative;
+}
+
+.popup .container .filme-informacoes{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 30px;
+
+}
+
+.container .capa{
+  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/nvVgLQWbIIFKchsvyQHEFanMTAX.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: 0, right -240px top;
+  overflow: hidden;
+  height: 300px;
+}
+
+.titulo-popup{
+  margin-top: 45%;
+  font-size: 40px;
+  color:rgb(240, 229, 229);
+  
+}
+
+.sobre{
+  margin-top: 0;
+  text-align: justify;
+  width: 80%;
+}
+
+.filme-informacoes .botoes{
+  display: flex;
+  margin-top: 10%;
+}
+
+.filme-informacoes .botoes .botao{
+  width: ;
+  border: 1px solid rgb(240, 229, 229);
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.filme-informacoes .botoes .botao i{
+  align-items: center;
+  margin: 8px 4px;
+}
+
+.popup .container .fechar{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #E50914;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: var(--preto);
+  border: 1px solid rgb(240, 229, 229);
+
+  border-radius: 50%;
+/*padding: 15px 30px;
+  margin-right: 15px;*/
+
+  cursor: pointer;
+  transition: .3s ease all;
+  outline : ;
+}
+
+.popup .container .fechar:hover{
+  background: rgb(240, 229, 229);
+  border: none;
 }
