@@ -38,11 +38,11 @@
         <h3 class="titulo"><strong>Um Sonho de Liberdade</strong></h3>
         <p class="descricao">Em 1946, Andy Dufresne(Tim Robbins), um banqueiro bem sucedido que pegou prisão perpétua após, supostamente, ter assassinado sua mulher. Dentro da prisão ele faz amizade com Ellis Boyd Redding (Morgan Freeman), um senhor que também está cumprindo prisão perpétua.</p>
         <div class="botoes">
-          <button role="button" class="botao">
+          <button role="button" class="botao" onclick="window.open('https://youtu.be/xSwCosvJGog')">
             <i class="fas fa-play"></i>
-            ASSISTIR TRAILER
+              ASSISTIR TRAILER
           </button>
-          <button role="button" class="botao">
+          <button role="button" class="botao" onclick="window.open('https://play.google.com/store/movies/details?id=o1axrUg2hlU')">
             <i class="fas fa-info-circle"></i>
             ALUGAR FILME
           </button>
@@ -55,25 +55,24 @@
   <div class="carrossel-filmes">
     <div class="owl-carousel owl-theme">
       <div class="item">
-        <!--<div class="filme-carrossel">
-          <img class="box-filme" src="img/mini1.jpg" alt="O Homem Bicentenário">-->
-          <!--<button role="button" class="botao">
-            <i class="fas fa-info-circle"></i>
-            MAIS INFORMAÇÕES
-          </button>
-        </div>-->
-        <a href="https://youtu.be/yfDlQ-Q12rg">
-          <img class="fixed-background" src="/img/mini1.jpg" alt="O Homem Bicentenário">
+        <a onclick="mostraModal('item1')">
+          <img class="box-filme" src="/img/mini1.jpg" alt="O Homem Bicentenário">
         </a>
       </div>
       <div class="item">
-        <img class="box-filme" src="img/mini2.jpg" alt="O Resgate do Soldado Ryan">
+        <a onclick="mostraModal('item2')">
+          <img class="box-filme" src="img/mini2.jpg" alt="O Resgate do Soldado Ryan">
+        </a>
       </div>
       <div class="item">
-        <img class="box-filme" src="img/mini3.jpg" alt="Uma Mente Brilhante">
+        <a onclick="mostraModal('item3')">
+          <img class="box-filme" src="img/mini3.jpg" alt="Uma Mente Brilhante">
+        </a>
       </div>
       <div class="item">
-        <img class="box-filme" src="img/mini4.jpg" alt="Gênio Indomável">
+        <a onclick="mostraModal('item4')">
+          <img class="box-filme" src="img/mini4.jpg" alt="Gênio Indomável">
+        </a>
       </div>
       <div class="item">
         <img class="box-filme" src="img/mini5.jpg" alt="DivertidaMente">
@@ -104,8 +103,8 @@
       </div>
     </div>
   </div>
-
-  <div class="modal">
+<!--
+  <div class="modal" id="modalId">
     <div class="popup">
       <div class="container">
         <div class="capa">
@@ -137,18 +136,161 @@
 
         </div>
         <button class="fechar">
-          <strong>X</strong>
+          X
+        </button>
+      </div>
+    </div>
+  </div>
+-->
+  <div class="modal" id="item1">
+    <div class="popup">
+      <div class="container">
+        <div class="capa" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/nvVgLQWbIIFKchsvyQHEFanMTAX.jpg);">
+          <section class="filme-informacoes">
+            <div class="titulo-popup">
+              <h3>O Homem Bicentenário</h3>
+            </div>
+          </section>
+        </div>
+        <div class="conteudo">
+          <section class="filme-informacoes">
+            <div class="sobre">
+              É eterno por ser máquina, mas lhe falta algo. Até onde os cálculos podem viver e sentir as emoções humanas?  
+            </div>
+            <div class="botoes">
+              <button onclick="window.open('https://www.youtube.com/watch?v=yfDlQ-Q12rg')" role="button" class="botao">
+                <i class="fas fa-play"></i>
+                <div class="texto">
+                ASSISTIR TRAILER
+                </div>
+              </button>
+              <button onclick="window.open('https://play.google.com/store/movies/details/O_Homem_Bicenten%C3%A1rio_LEG?id=0urRYUrkFMI')" role="button" class="botao">
+                <i class="fas fa-film"></i>
+                ALUGAR FILME
+              </button>
+              
+            </div>
+          </section>
+
+        </div>
+        <button class="fechar">
+          X
         </button>
       </div>
     </div>
   </div>
 
+  <div class="modal" id="item2">
+    <div class="popup">
+      <div class="container">
+        <div class="capa" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/hjQp148VjWF4KjzhsD90OCMr11h.jpg);">
+          <section class="filme-informacoes">
+            <div class="titulo-popup">
+              <h3>O Resgate do Soldado Ryan</h3>
+            </div>
+          </section>
+        </div>
+        <div class="conteudo">
+          <section class="filme-informacoes">
+            <div class="sobre">
+              Eu fiz a minha vida valer a pena? Conheça a história que pode ser baseada na sua e talvez encontre sua resposta.  
+            </div>
+            <div class="botoes">
+              <button onclick="window.open('https://youtu.be/dcz1Tvsx_f4')" role="button" class="botao">
+                <i class="fas fa-play"></i>
+                ASSISTIR TRAILER
+              </button>
+              <button onclick="window.open('https://play.google.com/store/movies/details?id=Za_Ni4KgQs8')" role="button" class="botao">
+                <i class="fas fa-film"></i>
+                ALUGAR FILME
+              </button>
+            </div>
+          </section>
+        </div>
+        <button class="fechar">
+          X
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="item3">
+    <div class="popup">
+      <div class="container">
+        <div class="capa" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/9PwUQZDHGPKsgbnoBl1Ah9zXWjk.jpg);">
+          <section class="filme-informacoes">
+            <div class="titulo-popup">
+              <h3>Uma Mente Brilhante</h3>
+            </div>
+          </section>
+        </div>
+        <div class="conteudo">
+          <section class="filme-informacoes">
+            <div class="sobre">
+              Como podemos conviver com nossos problemas se eles são grandes demais? Venha descobrir com este que lutou contra seus problemas e conseguiu um Nobel.  
+            </div>
+            <div class="botoes">
+              <button onclick="window.open('https://youtu.be/q8vUMD1f0ss')" role="button" class="botao">
+                <i class="fas fa-play"></i>
+                <div class="texto">
+                  ASSISTIR TRAILER
+                </div>
+              </button>
+              <button onclick="window.open('https://play.google.com/store/movies/details/Uma_Mente_Brilhante?id=clUcJlfwSg8')" role="button" class="botao">
+                <i class="fas fa-film"></i>
+                ALUGAR FILME
+              </button>
+            </div>
+          </section>
+        </div>
+        <button class="fechar">
+          X
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="item4">
+    <div class="popup">
+      <div class="container">
+        <div class="capa" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/vbpZxGxZQGkCZdYyQqoM26YS98.jpg);">
+          <section class="filme-informacoes">
+            <div class="titulo-popup">
+              <h3>Gênio Indomável</h3>
+            </div>
+          </section>
+        </div>
+        <div class="conteudo">
+          <section class="filme-informacoes">
+            <div class="sobre">
+              A dor consome o dia? Libertar-se de si é trazer um recomeço.  
+            </div>
+            <div class="botoes">
+              <button onclick="window.open('https://youtu.be/sedpVgMAa2Q')" role="button" class="botao">
+                <i class="fas fa-play"></i>
+                <div class="texto">
+                  ASSISTIR TRAILER
+                </div>
+              </button>
+              <button onclick="window.open('https://play.google.com/store/movies/details/Good_Will_Hunting?id=dKt2IJNj2C0')" role="button" class="botao">
+                <i class="fas fa-film"></i>
+                ALUGAR FILME
+              </button>
+            </div>
+          </section>
+        </div>
+        <button class="fechar">
+          X
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="https://kit.fontawesome.com/51653bc755.js" crossorigin="anonymous"></script>
   <script src="js/owl/jquery.min.js"></script>
   <script src="js/owl/owl.carousel.min.js"></script>
   <script src="js/owl/setup.js"></script>
-  <script src="js/owl/setup.js"></script>
+  <script src="js/main.js"></script>
   
 
 </body>
