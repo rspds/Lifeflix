@@ -213,13 +213,15 @@ header nav a:hover{
   background-position: 0, right -240px top;
   overflow: hidden;
   height: 300px;
+  position: relative;
 }
 
 .titulo-popup{
-  margin-top: 45%;
   font-size: 40px;
   color:rgb(240, 229, 229);
-  
+  position: absolute;
+  bottom: 14%;
+  width: 334px;
 }
 
 .sobre{
@@ -234,7 +236,6 @@ header nav a:hover{
 }
 
 .filme-informacoes .botoes .botao{
-  width: ;
   border: 1px solid rgb(240, 229, 229);
   display: flex;
   width: 100%;

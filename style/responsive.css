@@ -11,6 +11,7 @@
 
   header nav{
     margin-right: 0;
+    margin-bottom: 10px;
   }
 
   header nav a{
@@ -35,7 +36,7 @@
 
 @media screen and (min-width:1000px){
   .descricao{
-    width: 50%;
+    width: 80%;
   }
 }
 
