@@ -137,6 +137,18 @@ header nav a:hover{
   
 }
 
+.rodape .container{
+  height: 80px;
+  width: auto;
+  margin: 0 10%;
+  background-color: #292929;
+  border-radius: 2px 2px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
 /*Pop-up*/
 .modal{
   width: 100vw;
